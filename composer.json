@@ -1,0 +1,27 @@
+{
+    "name": "claretnnamocha/php-api-template",
+    "description": "A simple api boiler template",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Claret Nnamocha",
+            "email": "devclareo@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^3.6",
+        "miladrahimi/phprouter": "^4.0",
+        "gabordemooij/redbean": "^5.4",
+        "sendgrid/sendgrid": "^7.3",
+        "webonyx/graphql-php": "^0.13.4",
+        "volnix/csrf": "^1.2",
+        "leocavalcante/siler": "1.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AlphaAPI\\": "src/" 
+        },
+        "files": [ "src/form-functions.php", "src/helper-functions.php", "src/session-functions.php" ]
+    }
+}
